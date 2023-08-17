@@ -1,0 +1,9 @@
+Parte 1:
+1.
+Executa um ciclo começando no um 1 até 5+1, dentro do ciclo for existe uma função de incremento que irá adicionar a cada vez que o ciclo corre uma potencia de base dois
+2
+O excerto de codigo demonstrado pertence a um ciclo inicial que é inicializado a um e ira percorrer ate 5+1 vezes, dentro desse ciclo existe um outro ciclo que 
+é inicializado a 5, vai parar quando o termo for 0 e irá ter um decremento de -1 por cada vez que o ciclo for corrido, depois desse ciclo é feito um print para mostrar o resto da soma entre o i e o j
+3.
+O excerto de codigo demonstrado pertence a um ciclo i que vai ser percorrido 20 vezes, dentro desse ciclo podemos observar uma condição
+que indica que se o ciclo i tiver como indice 5 ou 10 o ciclo vai continuar, se nao obedecer a essa condição irá ser feito 

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alexd"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 03:44:32 "/>
+        <attribute name="created" value="YWxleGQ7TEFQVE9QLTVJMEZES09LOzIwMjAtMTEtMTA7IjAzOjE0OjQxICI7Mjc1MQ=="/>
+        <attribute name="edited" value="YWxleGQ7TEFQVE9QLTVJMEZES09LOzIwMjAtMTEtMTA7IjAzOjQ0OjMyICI7MjsyODYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="soma" type="Real" array="False" size=""/>
+            <declare name="totalpeso" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="peso" type="Real" array="False" size=""/>
+            <declare name="nota" type="Real" array="False" size=""/>
+            <declare name="media" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="totalpeso" expression="0"/>
+            <output expression="&quot;Insira o numero toda de componentes: &quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n+1" direction="inc" step="1">
+                <output expression="&quot;Insira a nota: &quot;" newline="True"/>
+                <input variable="nota"/>
+                <output expression="&quot;Insira o peso: &quot;" newline="True"/>
+                <input variable="peso"/>
+                <assign variable="totalpeso" expression="totalpeso+peso"/>
+                <assign variable="soma" expression="soma+(nota*peso)"/>
+            </for>
+            <if expression="totalpeso != 1">
+                <then>
+                    <output expression="&quot;Os pesos n&#227;o somam 100%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="media" expression="soma/n"/>
+                    <output expression="&quot;Nota:&quot;&amp;media" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
