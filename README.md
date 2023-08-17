@@ -23,13 +23,13 @@ Welcome to the University Works and Projects Repository! This repository serves 
 - Sample Projects: Sorting algorithm implementations, graph traversal algorithms.
 
 ### Digital Electronics and Computers (EDC)
-- Branch: [edc-projects](https://github.com/your-username/EDC)
+- Branch: [edc-projects](https://github.com/DMagalhaes19/Universidade/tree/EDC)
 - Exploration of digital electronics, including circuit design, logic gates, and digital system simulation.
 - Language: Python
 - Sample Projects: Digital circuit design for basic arithmetic operations.
 
 ### Processor Architecture (AP)
-- Branch: [ap-projects](https://github.com/your-username/ap-projects)
+- Branch: [ap-projects](https://github.com/DMagalhaes19/Universidade/tree/AED)
 - In-depth study of processor architecture, including pipelining, instruction set architecture, and assembly programming.
 - Language: Python
 - Sample Projects: Assembly programs for advanced mathematical computations.
