@@ -1,8 +1,8 @@
-# Algoritmia e Programação (AP) - Unidade Curricular
+# Algorithm and Programming (AP) - Curricular Unit
 
 Welcome to the Algoritmia e Programação (AP) section of this repository! In this section, you'll find a collection of projects that highlight the concepts and skills learned during the AP course.
 
-## What is Algoritmia e Programação (AP)?
+## What is Algorithm and Programming (AP)?
 
 The Algoritmia e Programação (AP) course marks the beginning of your academic journey in learning computer programming. In AP, you will be introduced to the foundational perspective of computation, with a focus on imperative programming.
 
