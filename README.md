@@ -1,8 +1,8 @@
-# Estruturas Discretas de Comunicação (EDC) - Unidade Curricular
+# Discrete Communication Structures (EDC) - Curricular Unit
 
-Welcome to the Estruturas Discretas de Comunicação (EDC) section of this repository! In this section, you'll find a collection of projects that delve into the foundational concepts explored in the EDC course.
+Welcome to the Discrete Communication Structures (EDC) section of this repository! In this section, you'll find a collection of projects that delve into the foundational concepts explored in the EDC course.
 
-## What is Estruturas Discretas de Comunicação (EDC)?
+## What is Discrete Communication Structures (EDC)?
 
 Estruturas Discretas de Comunicação is a crucial subject that explores mathematical and theoretical foundations behind discrete structures used in digital communication. Throughout this course, you will dive into topics like mathematical reasoning, induction, recursion, propositional logic, basic counting principles, and the use of integers in cryptography.
 
@@ -27,8 +27,3 @@ During the EDC course, you will explore the following core concepts:
 In this branch of the repository, you will come across a variety of projects that apply the concepts and techniques learned during the Estruturas Discretas de Comunicação course. Each project focuses on a specific area within the scope of EDC, allowing you to witness these concepts in practical applications.
 
 Feel free to explore the projects, review the source code, and delve into the accompanying documentation. We hope this section of the repository serves as an invaluable resource to reinforce your understanding of discrete structures and their applications in digital communication.
-
-**Note:** Remember to replace "edc-projects" with the actual link to the branch containing the Estruturas Discretas de Comunicação projects.
-
----
-*Replace "edc-projects" with the actual link to the branch containing the Estruturas Discretas de Comunicação projects.*
