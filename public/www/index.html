@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mystery Kingdom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="hamburger">
+                <label for="hamburger-checkbox"></label>
+            </div>
+            <input type="checkbox" id="hamburger-checkbox">
+            <img src="images/logo.png" id="logo" class="logo" alt="logo"></a>
+            <ul id="menu" class="navbar"> 
+                <li><a class="btn">Home</a></li>
+                <li><a href="#products" class="btn">Products</a></li>
+                <li><a href="#about_us" class="btn">About us</a></li>
+                <li><a class="login_button" id="login_button">Login</a></li>
+                <li><a href="#" id="logout" class="login_button" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <button id="delete" class="btn">Delete</button>
+        <button id="search" class="btn">Pesquisa</button>
+        <button id="create" class="btn">Create</button>
+    </main>
+    <!----------------------------------------------LOGIN-------------------------------------------------------------------->
+    <div id="popup" class="popup">
+        <div class="popupcontent">
+            <img src="images/user.png" alt="Logo" width="60" height="60"></a>
+            <img src="images/close.png" alt="Close" id="close" class="close" width="30" height="30"></a>
+            <fieldset>
+                <input type="text" id="username" placeholder="username">
+                <input type="password" id="password" placeholder="password">
+                <a href="#" class="login_button" onclick="login()">Login</a><br><br>
+                <a>Ainda não tem conta? Clique</a>
+                <u  class="registo_button" onclick="registarform()">AQUI</u>
+            </fieldset>
+            <p id="pMsg1"></p>
+        </div>
+    </div>
+
+
+    <div id="popup_registar" class="popup">
+        <div class="popupcontent">
+            <img src="images/user.png" alt="Logo" width="60" height="60"></a>
+            <fieldset>
+                <input type="text" id="username_registar" placeholder="username">
+                <input type="password" id="password_registar" placeholder="password">
+                <a href="#" class="login_button" onclick="registarEnviar()">Registar</a><br><br>
+                <u  class="registo_button" onclick="loginform()">Login</u>
+            </fieldset>
+            <p id="pMsg2"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('login_button').addEventListener('click', function () {
+            document.querySelector('.popup').style.display = 'flex';
+        });
+        document.getElementById('close').addEventListener('click', function () {
+            document.querySelector('.popup').style.display = 'none';
+        }); 
+    </script>
+    <!----------------------------------------------Search-------------------------------------------------------------------->
+    <div id="popup_search" class="popup_search">
+        <div class="popupcontent">
+            <img src="images/search.png" alt="Logo" width="60" height="60"></a>
+            <img src="images/close.png" alt="Close" id="close1" class="close" width="30" height="30"></a>
+            <fieldset>
+                <input type="text" id="nome_prod" placeholder="Nome do produto">
+                <a id="btn_search" class="login_button" onclick="search_prod();">Procurar</a><br><br>
+            </fieldset>
+            <p id="pMsg1"></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('search').addEventListener('click', function () {
+            document.querySelector('.popup_search').style.display = 'flex';
+        });
+        document.getElementById('close1').addEventListener('click', function () {
+            document.querySelector('.popup_search').style.display = 'none';
+        }); 
+        document.getElementById('btn_search').addEventListener('click', function () {
+            document.querySelector('.popup_search').style.display = 'none';
+        });
+    </script>
+
+    <!-----------------------------------------------Delete------------------------------------------------------------------->
+    <div id="popup_delete" class="popup_delete">
+        <div class="popupcontent">
+            <img src="images/trash.png" alt="Logo" width="60" height="60"></a>
+            <img src="images/close.png" alt="Close" id="close2" class="close" width="30" height="30"></a>
+            <fieldset>
+                <input type="text" id="prod" placeholder="Insira o nome do produto">
+                <a id="btn_delete" class="login_button" onclick="del()">Delete</a><br><br>
+            </fieldset>
+            <p id="pMsg1"></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('delete').addEventListener('click', function () {
+            document.querySelector('.popup_delete').style.display = 'flex';
+        });
+        document.getElementById('close2').addEventListener('click', function () {
+            document.querySelector('.popup_delete').style.display = 'none';
+        }); 
+        document.getElementById('btn_delete').addEventListener('click', function () {
+            document.querySelector('.popup_delete').style.display = 'none';
+        });
+    </script>
+
+    <!-----------------------------------------------------Create------------------------------------------------------------->
+    <div id="popup_create" class="popup_create">
+        <div class="popupcontent">
+            <img src="images/add-product.png" alt="Logo" width="60" height="60"></a>
+            <img src="images/close.png" alt="Close" id="close3" class="close" width="30" height="30"></a>
+            <fieldset>
+                <input type="text" id="nome" placeholder="Insira o nome do produto">
+                <input type="text" id="prod_img" placeholder="Insira Imagem">
+                <input type="text" id="prod_preco" placeholder="Insira Preço">
+                <a id="btn_create" class="login_button" onclick="addProduct()">Adicionar produto</a><br><br>
+            </fieldset>
+            <p id="pMsg1"></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('create').addEventListener('click', function () {
+            document.querySelector('.popup_create').style.display = 'flex';
+        });
+        document.getElementById('close3').addEventListener('click', function () {
+            document.querySelector('.popup_create').style.display = 'none';
+        }); 
+        document.getElementById('btn_create').addEventListener('click', function () {
+            document.querySelector('.popup_create').style.display = 'none';
+        });
+    </script>
+
+    <!----------------------------------------------------------------------------------------------------------------------->
+
+    <!---------------featured categories------------------->
+
+    <div class="small-container">
+        <div class="row">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0c31a3d7-fcb5-48cb-a396-65e6e89b47d5/d7vgai6-34346881-a1c9-486a-9360-1b3a6e62e739.jpg/v1/fill/w_1192,h_670,q_70,strp/hd_games_mix_wallpaper___1920_x_1080_by_amarokdota_d7vgai6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzBjMzFhM2Q3LWZjYjUtNDhjYi1hMzk2LTY1ZTZlODliNDdkNVwvZDd2Z2FpNi0zNDM0Njg4MS1hMWM5LTQ4NmEtOTM2MC0xYjNhNmU2MmU3MzkuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5Hd_deHdgPjCnydsv_OYumaRWHIOGxWv59y6HhWOMTo">
+        </div>
+    </div>
+
+
+    <!---------------featured categories------------------->
+    <div id="products" class="products">
+        <div class="small-continer">
+            <h2 class="title">Feature Products</h2>
+            <div id="listaProds" class="row_prod">
+            </div>
+        </div>
+    </div>
+    <!---------------MB------------------->
+    <div id="mystery" class="mystery">
+        <div class="small-container">
+            <h2 class="title">Mystery Box</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img
+                        src="https://imgs.search.brave.com/ExJBpDbzYT_fFGgUcf8GxmUKUgP0m9aj85QYe0FTUQM/rs:fit:1198:701:1/g:ce/aHR0cHM6Ly93d3cu/c3hzdy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTkvMDYv/T1dfQW5uaXZlcnNh/cnlfMDI0LWUxNTI3/MDA3MTY3MzE0LTEu/cG5n">
+                    <div>Loot Box</div>
+                    <div>5&#8364;</div>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="https://imgs.search.brave.com/U4KAvoxuFBygyMVlq8C4f8-xj3SdnrQWkurzzZs7KfA/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/amRzWlA4MHBzU3ZW/M3lKS3FpTHZ3SGFF/OCZwaWQ9QXBp">
+                    <div>Loot Box</div>
+                    <div>10&#8364;</div>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="https://imgs.search.brave.com/MWhA0oxBu0DWRzDycn3_TF2hhrlMAr6LKizQdDG0P90/rs:fit:1200:720:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9l/bC1rODZBaXlwcy9t/YXhyZXNkZWZhdWx0/LmpwZw">
+                    <div>Loot Box</div>
+                    <div>15&#8364;</div>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="https://imgs.search.brave.com/w8ZnsBXlgpRSULDB5Dkh9cPsUIS9Fthm2OFf6PC5kso/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dGltZXNsaWZlc3R5/bGUubmV0L3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzEyL2xv/b3QtYm94LmpwZw">
+                    <div>Loot Box</div>
+                    <div>20&#8364;</div>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="https://imgs.search.brave.com/blp3BtcrYMtl2foio0YG6ImQUSMkwpyGz8pf9qRO3lg/rs:fit:1200:720:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9M/U0dBem1PcVlCVS9t/YXhyZXNkZWZhdWx0/LmpwZw">
+                    <div>Loot Box</div>
+                    <div>25&#8364;</div>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="https://imgs.search.brave.com/vQm6anfpEmMj0pyl8EAm3avuTLNh-nJfQ85vvC9aRVY/rs:fit:1200:675:1/g:ce/aHR0cHM6Ly9zbS5p/Z24uY29tL3QvaWdu/X2FwL2ZlYXR1cmUv/aC9oZXJlcy1ob3ct/L2hlcmVzLWhvdy1s/b290LWJveC1taWNy/b3RyYW5zYWN0aW9u/LWFkZGljdGlvbi1k/ZXN0cm95cy1saXZl/c19leTVqLjEyMDAu/anBn">
+                    <div>Loot Box</div>
+                    <div>30&#8364;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!---------------offer------------------->
+        <div id="offer" class="offer">
+            <div class="small-container">
+                <div class="row_offer">
+                    <div class="col-2">
+                        <img src="https://imgs.search.brave.com/4rCF4Q06rHExszndBlGVmwK4ItMoRYKi6I_0hYawdzY/rs:fit:486:893:1/g:ce/aHR0cHM6Ly9nYW1p/bmd0ZW5zLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOS8w/Ny9CYWlodS5wbmc" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively Available On Store</p>
+                        <h1>Legendary skin for Genji</h1>
+                        <small>Em compras superiores a 20&#8364; recebes esta skin de graça</small>
+                        <br>
+                        <a href="#products" class="btn">Start Now &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------Testimonial------------------->
+        <div class="testimonial">
+            <h2 class="title">Comentários</h2>
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <p>Um dos melhores sites para aquisição de skins.</p>
+                        <img src="images/user.png">
+                        <h3>Afonso</h3>
+                    </div>
+
+                    <div class="col-3">
+                        <p>Várias skins e de diferentes jogos. Rapidamente recebi a minha e estou satisfeito com o
+                            produto</p>
+                        <img src="images/user.png">
+                        <h3>Rodrigo</h3>
+                    </div>
+
+                    <div class="col-3">
+                        <p>Site com as skins mais baratas e diversificadas</p>
+                        <img
+                            src="images/user.png">
+                        <h3>Carolina</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title">Localização da sede</h2>
+        <div id="map"></div>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8G_iwjEktohQDbiv9Wqg62hQfvBAvYXY&callback=initMap">
+            </script>
+        <br>
+        <br>
+        <br>
+        <!---------------About US------------------->
+        <div id="about_us" class="about_us">
+            <h1 class="title">About us</h1>
+            <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2DKctl8-pr5gNriytmVHvDWG7omDaE3W_TorR-UIZNc1rGld">
+                    <p>Dídio Magalhães</p>
+                </div>
+                <div class="col-4">
+                    <img src="https://cdn.discordapp.com/attachments/897860241235017778/1064999246136344626/1673985998254.jpg">
+                    <p>Gonçalo Inácio</p>
+                </div>
+                <div class="col-4">
+                    <img src="https://imgs.search.brave.com/nwBCwnFsdjkOX7iBGNG4-9zfoikkV31lO8G6DKUrmpk/rs:fit:1200:675:1/g:ce/aHR0cHM6Ly9wYnMu/dHdpbWcuY29tL21l/ZGlhL0Q3MVR4Tk9V/MEFBYkkyay5qcGc">
+                    <p>Pedro Lage</p>
+                </div>
+                <div class="col-4">
+                    <img src="https://i.pinimg.com/originals/24/75/23/2475238e963bce9a492e4954c616d935.jpg">
+                    <p>Rodrigo Tavares</p>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>

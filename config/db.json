@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nome": "Joker",
+        "imagem": "https://th.bing.com/th/id/R.60f2a8fe5240659d4ae3ea370b4b2c23?rik=S87xSuYrRIGlng&riu=http%3a%2f%2fimage.qianye88.com%2fpic%2f7f33df0b604558b960f43fe36f23b242&ehk=G9HCSLNCePHlewxX82vqg3Q3hr3O4lRpEy1QNXIlVG4%3d&risl=&pid=ImgRaw&r=0",
+        "preco": 12
+    },
+    {
+        "id": 2,
+        "nome": "Blood_Moon_Pyke",
+        "imagem": "https://www.pixel4k.com/wp-content/uploads/2019/11/blood-moon-pyke-lol-splash-art-skin-league-of-legends-lol_1574105119.jpg",
+        "preco": 6
+    },
+    {
+        "id": 3,
+        "nome": "Yoroi_Samurai",
+        "imagem": "https://imgs.search.brave.com/czlZ7VwPlVeNRX7MJCnYI3IxhFZdCixbrWoMnKWnZa0/rs:fit:850:478:1/g:ce/aHR0cHM6Ly9hc3Nl/dHMuZ2FtZXB1ci5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMDYvMjUwMzM0/NTAvaGFsby1pbmZp/bml0ZS1zZWFzb25z/LTg1MHg0NzguanBn",
+        "preco": 20
+    },
+    {
+        "id": 4,
+        "nome": "McCree_Summer_Skin",
+        "imagem": "https://sm.ign.com/ign_br/screenshot/default/ow-summergames2017-017-1502205161728_3d6n.png",
+        "preco": 5
+    },
+    {
+        "id": 5,
+        "nome": "Sigma_Summer_Skin",
+        "imagem": "https://cdn1.dotesports.com/wp-content/uploads/2021/07/20122516/OVR_Presskit_SummerGames2021_013.png",
+        "preco": 5
+    },
+    {
+        "id": 6,
+        "nome": "ddd",
+        "imagem": "",
+        "preco": "20"
+    },
+    {
+        "id": 7,
+        "nome": "fff",
+        "imagem": "",
+        "preco": "20"
+    }
+]
