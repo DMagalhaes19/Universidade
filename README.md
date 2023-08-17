@@ -29,7 +29,7 @@ Welcome to the University Works and Projects Repository! This repository serves 
 - Sample Projects: Digital circuit design for basic arithmetic operations.
 
 ### Processor Architecture (AP)
-- Branch: [ap-projects](https://github.com/DMagalhaes19/Universidade/tree/AED)
+- Branch: [ap-projects](https://github.com/DMagalhaes19/Universidade/tree/AP)
 - In-depth study of processor architecture, including pipelining, instruction set architecture, and assembly programming.
 - Language: Python
 - Sample Projects: Assembly programs for advanced mathematical computations.
