@@ -1,7 +1,0 @@
-nome:joao
-nif:30007459
-idade:19
-escalao:sub23
-saldo_disponivel:300
-passe:Metropolitano
-validade:02/05/21
